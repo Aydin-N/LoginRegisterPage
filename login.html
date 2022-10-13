@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <style>
+        .select{
+            transform: translateX(46px);
+            width: 140px;
+        }
+        .frame{
+            height: 500px;
+        }
+        .btn{
+            width: 130px;
+        }
+    </style>
+</head>
+<body onload="Run()">
+    <div class="container">
+        <div class="frame" id="frame">
+            <form action="info.php" method="post">
+                <div class="header">
+                    <span class="select" id="select"></span>
+                    <h2 class="chosen" id="login">Login</h2>
+                    <h2 class="" id="register">Register</h2>
+                </div>
+                <div class="input-frame">
+                    <label for="uname" class="">Enter Your Email</label>
+                    <input type="email" name="uname" id="uname" spellcheck="false">
+                </div>
+                <div class="input-frame">
+                    <label for="upass" class="">Enter Your Password</label>
+                    <input type="password" name="upass" id="upass">
+                </div>
+                <button type="submit" class="btn" id="btn">Login</button><br>
+                <div class="forgot"><a href="#">Forgot Your Password?</a></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function Run(){
+            select.style.transform = "translateX(-66px)"
+            select.style.width = "96px"
+            frame.style.height = "450px"
+            btn.style.width = "110px"
+            register.classList.remove("chosen")
+            login.classList.add("chosen")
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

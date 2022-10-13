@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <style>
+        .select{
+            transform: translateX(-66px);
+            width: 96px;
+        }
+        .frame{
+            height: 450px;
+        }
+        .btn{
+            width: 110px;
+        }
+    </style>
+</head>
+<body onload="Run()">
+    <div class="container">
+        <div class="frame" id="frame">
+            <form action="" method="post">
+                <div class="header">
+                    <span class="select" id="select"></span>
+                    <h2 class="" id="login">Login</h2>
+                    <h2 class="chosen" id="register">Register</h2>
+                </div>
+                <div class="input-frame">
+                    <label for="uname" class="">Enter Your Email</label>
+                    <input type="email" name="uname" id="uname" spellcheck="false">
+                </div>
+                <div class="input-frame">
+                    <label for="upass" class="">Enter Your Password</label>
+                    <input type="password" name="upass" id="upass">
+                </div>
+                <div class="input-frame">
+                    <label for="upass-check" class="">Enter Your Password Again</label>
+                    <input type="password" name="upass-check" id="upass-check">
+                </div>
+                <button type="submit" class="btn" id="btn">Register</button><br>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function Run(){
+            select.style.transform = "translateX(46px)"
+            select.style.width = "140px"
+            frame.style.height = "500px"
+            btn.style.width = "130px"
+            register.classList.add("chosen")
+            login.classList.remove("chosen")
+        }
+    </script>
+</body>
+</html>
