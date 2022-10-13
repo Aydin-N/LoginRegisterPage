@@ -21,7 +21,7 @@ input.forEach((each) => each.addEventListener("blur", () => {
 }))
 
 login.addEventListener("click", () => {
-    window.location.replace("login.html")
+    window.location.replace("index.html")
 })
 register.addEventListener("click", () => {
     window.location.replace("register.html")
